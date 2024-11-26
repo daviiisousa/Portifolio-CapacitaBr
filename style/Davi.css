@@ -15,10 +15,14 @@
   }
 
   .divNav {
+    background-color: #ffffff;
     display: flex;
     padding: 1.25rem;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
   }
 
   .ulNav {
@@ -56,6 +60,20 @@
       h3 {
         color: #ffff00;
       }
+
+      .icons{
+        display: flex;
+        gap: .625rem;
+        justify-content: center;
+
+        a{
+          width: 5%;
+        }
+        img{
+          width: 100%;
+          
+        }
+      }
     }
 
     .imgSobre {
@@ -70,69 +88,62 @@
       }
     }
   }
+    
+  
 }
 
 .Sobre {
-  padding: 0.625rem 1.25rem;
+  padding: 1.875rem;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h2 {
     text-align: center;
-    margin-bottom: .625rem;
+    margin-bottom: 0.625rem;
     font-size: 2.5rem;
     font-weight: 600;
   }
 
-  p{
+  p {
     width: 50%;
     text-align: justify;
     color: #383838;
   }
+
+  .tecnologias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    img{
+      width: 8%;
+    }
+  }
 }
 
-.projetos{
-    padding: .625rem 1.25rem;
+.projetos {
+  padding: 0.625rem 1.25rem;
+  background-color: #383838;
 
-    h2 {
-        font-size: 2.1875rem;
-        font-weight: 600;
-      }
+  h2 {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
 
-    .separador{
-        border: 3px solid #ffff00;
-        width: 50%;
+  .separador {
+    border: 3px solid #ffff00;
+    width: 50%;
+  }
+
+  .imgProjeto {
+    padding: 10px 0px;
+
+    img {
+      width: 50%;
     }
-
-    .divProjeto{
-        display: flex;
-        gap: .625rem;
-        padding: .625rem;
-        margin: .625rem 0rem;
-        border-radius: .625rem;
-        background-color: #133e87;
-        color: #ffffff;
-        transition: 0.5s;
-
-        .divImgProjeto{
-            width: 50%;
-    
-            .imgProjeto{
-                width: 100%;
-            }
-        }
-
-        .descProjeto{
-            h2{
-                font-size: 2.8125rem;
-            }
-        }
-    }
-
-    .divProjeto:hover{
-        transform: scale(1.01);
-        transition: 0.5s;
-    }
-
+  }
+  
 }
