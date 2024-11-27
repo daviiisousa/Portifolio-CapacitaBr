@@ -111,20 +111,29 @@ hr {
   display: flex;
   transition: transform 0.3s;
   text-align: justify;
-  margin: 0;
-  padding: 0;
 }
 
-.article-ataslan p {
-  margin: 20px;
-  padding: 5px;
-}
-
-.article-ataslan p:hover {
+.article-ataslan:hover {
   transform: scale(1.03);
 }
 
-.article-ataslan a {
+.div-text-ataslan {
+  padding: 0 20px 0;
+}
+
+.div-text-ataslan li {
+  padding: 5px 0 5px;
+}
+
+.div-text-ataslan p {
+  padding: 5px 0 0;
+}
+
+.div-text-ataslan p:hover {
+  transform: scale(1.03);
+}
+
+.div-text-ataslan a {
   display: block;
   text-decoration: none;
   background-color: aqua;
@@ -134,21 +143,22 @@ hr {
   padding: 10px;
 }
 
-.article-ataslan:hover {
-  transform: scale(1.03);
-}
-
 .img-ataslan {
-  width: 60%;
-  height: 40%;
+  width: 50%;
+  height: 45%;
   border-radius: 20px;
-  padding: 10px 0 0;
 }
 
-.div-text-ataslan {
-  padding: 10px 20px 10px;
-  display: flex;
-  flex-direction: column;
+.ver-mais-ataslan {
+  margin: 20px 0 0;
+  text-decoration: none;
+  background-color: aqua;
+  color: blueviolet;
+  border-radius: 10px;
+}
+
+.ver-mais-ataslan :hover {
+  transform: scale(1.03);
 }
 
 footer {
