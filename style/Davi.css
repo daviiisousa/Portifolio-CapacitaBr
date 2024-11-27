@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  height: 100vh;
+}
+
 .HeaderDavi {
   h1 {
     font-size: 50px;
@@ -20,9 +24,11 @@
     padding: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 50;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .ulNav {
@@ -34,16 +40,31 @@
       color: #000000;
     }
 
-    a:hover {
+    a::after {
+      content: ""; 
+      display: block;
+      width: 0; 
+      height: 2px; 
+      background-color: #007bff; 
+      transition: width 0.3s ease; 
+    }
+    
+    a:hover::after {
+      width: 100%; 
+    }
+
+    a:hover{
       color: #133e87;
     }
   }
 
   .divSobre {
+    
     background-color: #133e87;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1.25rem;
+    padding-top: 130px;
 
     .divNomeSobre {
       border-right: 2px solid #608bc1;
@@ -96,7 +117,7 @@
 
 .Sobre {
   padding: 1.875rem;
-  margin-bottom: 30px;
+  margin: 1.875rem 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +170,7 @@
 
     .Projeto {
       padding: 20px 0px;
+      transition: 0.5s ease-in-out;
 
       img {
         width: 100%;
@@ -158,14 +180,15 @@
       h2 {
         margin: 10px 0px;
         font-size: 50px;
+        letter-spacing: 3px;
       }
 
       h2::after {
         content: "";
-        width: 20%;
+        width: 10%;
         height: 1.25rem;
         margin-left: 0.625rem;
-        background-color: #7d26ce;
+        background-color: #133e87;
         display: inline-block;
       }
 
@@ -173,6 +196,122 @@
         color: #ffffff;
         text-align: justify;
       }
+
+      .btn{
+        margin: 10px 0px;
+        border: none;
+        background-color: #ffffff;
+        color: #133e87;
+        padding: 6px;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 600;
+        transition: 0.5s ease-in-out;
+
+        a{
+          color: #133e87;
+          text-decoration: none;
+        }
+
+      }
+
+      .btn:hover{
+        background-color: #00000000;
+        border: 2px solid #133e87;
+        color: #133e87;
+        transition: 0.5s ease-in-out;
+      }
+    }
+
+    .Projeto:hover{
+      transform: scale(1.03);
+      transition: 0.5s ease-in-out;
     }
   }
+}
+
+.Cursos{
+  padding: 0.625rem 6.25rem;
+  margin: 1.875rem 0px;
+
+  .divCurso{
+
+    h2{
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .cursosAba:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #f06, #00f);
+      margin-bottom: 10px;
+    }  
+
+    .cursosGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+
+      .curso{
+
+        span{
+          color: #383838;
+          font-size: 16px;
+        }
+
+        .divInstituicao{
+          display: flex;
+          align-items: center;
+          gap: .625rem;
+          margin-bottom: .625rem;
+
+          img{
+            height: 1.5625rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.certificados{
+  padding: 20px;
+
+  .divCertificados{
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 20px;
+
+    h2{
+      text-align: center;
+      font-size: 40px;
+      color: #ffffff;
+    }
+
+    .imagensCertifacados{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 70%;
+      margin: 20px auto;
+
+      img{
+        width: 100%;
+        height: 300px;
+      }
+    }
+  
+  }
+
+}
+
+footer{
+  padding: .625rem;
+  background-color: #133e87;
+  color: #608bc1;
+  text-align: center;
 }
