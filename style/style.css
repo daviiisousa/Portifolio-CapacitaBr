@@ -1,100 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-main{
-    padding: 40px 70px;
+main {
+  padding: 40px 70px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  background-color: #3a1078;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 50px;
+  h1 {
     color: white;
+  }
 }
 
-.nav{
-    background-color: #3A1078;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 50px;
-    h1{
-        color: white;
-    }
+.divDePortifolios {
+  display: flex;
+  gap: 21px;
 }
 
-.divDePortifolios{
-    display: flex;
-    gap: 21px;
+.fotoLink {
+  object-fit: cover;
+  object-position: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
-.fotoLink{
-    object-fit: cover;
-    object-position: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+.divDescricao {
+  display: flex;
+  gap: 20px;
 }
 
-.divDescricao{
-    display: flex;
-    gap: 20px;
+.divDescricaoDavi {
+  display: flex;
+  gap: 20px;
+  flex-direction: row-reverse;
+  margin: 20px 0px;
 }
 
-.divDescricaoDavi{
-    display: flex;
-    gap: 20px;
-    flex-direction: row-reverse;
-    margin: 20px 0px;
+.verMais {
+  background-color: #3795bd;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 37px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+  width: 100%;
+  transition: 0.5s;
 }
 
-.verMais{
-    background-color: #3795BD;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    padding: 10px 37px;
-    font-size: 20px;
-    font-weight: 700;
-    margin-top: 8px;
-    width: 100%;
-    transition: 0.5s;
+.verMais:hover {
+  background-color: #4e31aa;
+  transition: 0.5s;
 }
 
-.verMais:hover{
-    background-color: #4E31AA;
-    transition: 0.5s;
+.imgDescricao {
+  width: 500px;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
-.imgDescricao{
-    width: 500px;
-    height: 360px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 8px;
+p {
+  padding: 10px 0px;
+  color: #4f4e4e;
 }
 
-p{
-    padding: 10px 0px;
-    color: #4F4E4E;
+.tituloDesc {
+  font-size: 40px;
 }
 
-.tituloDesc{
-    font-size: 40px;
+hr {
+  background-color: #3795bd;
+  padding: 3px;
+  border: none;
 }
 
-hr{
-    background-color: #3795BD;
-    padding: 3px;
-    border: none;
+.destaque {
+  font-weight: 700;
+  color: black;
+  font-size: 18px;
 }
 
-.destaque{
-    font-weight: 700;
-    color: black;
-    font-size: 18px;
+.section-ataslan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article-ataslan {
+  color: blueviolet;
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+.article-ataslan p {
+  margin: 20px;
+  padding: 5px;
+}
+
+.article-ataslan p:hover {
+  transform: scale(1.03);
+}
+
+.article-ataslan a {
+  display: block;
+  text-decoration: none;
+  background-color: aqua;
+  color: blueviolet;
+  align-self: flex-start;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.article-ataslan:hover {
+  transform: scale(1.03);
+}
+
+.img-ataslan {
+  width: 60%;
+  height: 40%;
+  border-radius: 20px;
+  padding: 10px 0 0;
+}
+
+.div-text-ataslan {
+  padding: 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+footer a:hover {
+  padding: 5px;
+  color: blueviolet;
+  text-transform: uppercase;
 }
