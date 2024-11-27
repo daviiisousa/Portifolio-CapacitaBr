@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  height: 100vh;
+}
+
 .HeaderDavi {
   h1 {
     font-size: 50px;
@@ -20,9 +24,11 @@
     padding: 1.25rem;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 50;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .ulNav {
@@ -40,10 +46,12 @@
   }
 
   .divSobre {
+    
     background-color: #133e87;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1.25rem;
+    padding-top: 130px;
 
     .divNomeSobre {
       border-right: 2px solid #608bc1;
@@ -96,7 +104,7 @@
 
 .Sobre {
   padding: 1.875rem;
-  margin-bottom: 30px;
+  margin: 1.875rem 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,6 +157,7 @@
 
     .Projeto {
       padding: 20px 0px;
+      transition: 0.5s ease-in-out;
 
       img {
         width: 100%;
@@ -201,11 +210,17 @@
         transition: 0.5s ease-in-out;
       }
     }
+
+    .Projeto:hover{
+      transform: scale(1.03);
+      transition: 0.5s ease-in-out;
+    }
   }
 }
 
 .Cursos{
   padding: 0.625rem 6.25rem;
+  margin: 1.875rem 0px;
 
   .divCurso{
 
@@ -230,6 +245,11 @@
 
       .curso{
 
+        span{
+          color: #383838;
+          font-size: 16px;
+        }
+
         .divInstituicao{
           display: flex;
           align-items: center;
@@ -240,12 +260,38 @@
             height: 1.5625rem;
           }
         }
-
-        p{
-          text-align: left;
-          color: #383838;
-        }
       }
     }
   }
+}
+
+.certificados{
+  padding: 20px;
+
+  .divCertificados{
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 20px;
+
+    h2{
+      text-align: center;
+      font-size: 40px;
+      color: #ffffff;
+    }
+
+    .imagensCertifacados{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      width: 70%;
+      margin: 20px auto;
+
+      img{
+        width: 100%;
+        height: 300px;
+      }
+    }
+  
+  }
+
 }
