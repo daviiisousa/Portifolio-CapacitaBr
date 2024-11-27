@@ -1,76 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.HeaderDavi{
+.HeaderDavi {
+  h1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
 
-    h1{
+  .divNav {
+    background-color: #ffffff;
+    display: flex;
+    padding: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .ulNav {
+    display: flex;
+    gap: 1.25rem;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    a:hover {
+      color: #133e87;
+    }
+  }
+
+  .divSobre {
+    background-color: #133e87;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem;
+
+    .divNomeSobre {
+      border-right: 2px solid #608bc1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
         font-size: 50px;
-        font-weight: 400;
+        color: #ffffff;
+      }
+
+      h3 {
+        color: #ffff00;
+        margin-bottom: 10px;
+      }
+
+      .icons {
+        display: flex;
+        gap: 0.625rem;
+        justify-content: center;
+
+        a {
+          width: 5%;
+        }
+        img {
+          width: 100%;
+        }
+      }
     }
 
-    .divNav{
-        display: flex;
-        padding: 1.25rem;
-        justify-content: space-between;
-        align-items: center;
+    .imgSobre {
+      display: flex;
+      justify-content: center;
+
+      h3 {
+        color: #ffffff;
+      }
+
+      img {
+        object-fit: cover;
+        width: 50%;
+        height: 400px;
+        border-radius: 50%;
+      }
     }
-    
-    .ulNav{
-        display: flex;
-        gap: 1.25rem;
-    
-        a{
-            text-decoration: none;
-            color: #000000;
-        }
-    
-        a:hover{
-            color: #133E87;
-        }
-    }
-    
-    .divSobre{
-        background-color: #133E87;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 1.25rem;
-    
-        .divNomeSobre{
-            border-right: 2px solid #608BC1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-    
-            h2{
-                font-size: 50px;
-                color: #ffffff;
-            }
-    
-            h3{
-                color: #ffff00;
-            }
-        }
-    
-        .imgSobre{
-            display: flex;
-            justify-content: center;
-    
-            img{
-                object-fit: cover;
-                width: 50%;
-                height: 400px;
-                border-radius: 50%;
-            }
-        }
-    
-       
-    }
+  }
 }
 
+.Sobre {
+  padding: 1.875rem;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.625rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    width: 50%;
+    text-align: justify;
+    color: #383838;
+    margin-bottom: 20px;
+  }
+
+  .tecnologias {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: 8%;
+    }
+  }
+}
+
+.projetos {
+  padding: 0.625rem 1.25rem;
+  background-image: url(../public/macos-monterey-stock-black-dark-mode-layers-5k-3840x2160-5889.jpg);
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .separador {
+    border: 3px solid #ffff00;
+    width: 30%;
+  }
+
+  .divProjeto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .Projeto {
+      padding: 20px 0px;
+
+      img {
+        width: 100%;
+        border-radius: 0.625rem;
+      }
+
+      h2 {
+        margin: 10px 0px;
+        font-size: 50px;
+      }
+
+      h2::after {
+        content: "";
+        width: 20%;
+        height: 1.25rem;
+        margin-left: 0.625rem;
+        background-color: #7d26ce;
+        display: inline-block;
+      }
+
+      p {
+        color: #ffffff;
+        text-align: justify;
+      }
+    }
+  }
+}
