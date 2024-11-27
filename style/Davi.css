@@ -40,7 +40,20 @@ body{
       color: #000000;
     }
 
-    a:hover {
+    a::after {
+      content: ""; 
+      display: block;
+      width: 0; 
+      height: 2px; 
+      background-color: #007bff; 
+      transition: width 0.3s ease; 
+    }
+    
+    a:hover::after {
+      width: 100%; 
+    }
+
+    a:hover{
       color: #133e87;
     }
   }
@@ -294,4 +307,11 @@ body{
   
   }
 
+}
+
+footer{
+  padding: .625rem;
+  background-color: #133e87;
+  color: #608bc1;
+  text-align: center;
 }
