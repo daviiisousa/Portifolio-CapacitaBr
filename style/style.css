@@ -179,3 +179,48 @@ footer a:hover {
   color: blueviolet;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 880px) {
+  .nav {
+    flex-flow: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+
+    & .divDePortifolios {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  main {
+     padding: 0;
+  }
+
+  .divDescricao,
+  .divDescricaoDavi,
+  .article-ataslan {
+    flex-direction: column;
+    justify-content: space-between;
+
+    & div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & img {
+      width: 100%;
+    }
+
+    & .ver-mais-ataslan a {
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+}
